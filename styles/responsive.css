@@ -1,0 +1,45 @@
+@media screen and (max-width: 700px) {
+    header .container {
+        padding: 0 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;    
+    }
+
+    .login {
+        padding-right: 5px;
+    }
+
+    .nav-icon:nth-child(1),
+    .nav-icon:nth-child(2),
+    .nav-icon:nth-child(4) {
+        visibility: hidden;
+    }
+
+    .principal-movie .container {
+        margin: 15% 0 0 20px;
+    }
+
+    .logo {
+        width: 200px;
+    }
+
+    .description {
+        font-size: 15px;
+        margin-bottom: 30px;
+        width: 280px;
+    }
+
+    .button {
+        padding: 0.8rem;
+    }
+
+    .movie-box {
+        height: 50%;
+        display: block;
+    }
+
+    .carousel-movies {
+        padding-left: 20px;
+    }
+}

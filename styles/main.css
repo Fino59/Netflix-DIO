@@ -1,0 +1,157 @@
+:root {
+    --red: #E50914;
+    --black:#141414;
+    --lightgrey: #aaa;
+    --white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--black);
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    color: var(--white);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .container {
+    padding: 0 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+}
+
+header .container img {
+    margin: 10px 50px 5px 0;
+    width: 95px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--lightgrey);
+    margin-right: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+header nav a:hover {
+    color: var(--white);
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+}
+
+.nav-icon {
+    width: 25px;
+    margin-right: 1rem;    
+}
+
+.nav-icon:nth-child(4) {
+    width: 10px;
+}
+
+.principal-movie {
+    font-size: 20px;
+    background-image: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%),
+    url('../img/Round6.jpg');
+
+    height: 600px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.principal-movie .container {
+    margin: 15% 0 0 60px;
+}
+
+.logo {
+    width: 450px;
+}
+
+.description {
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 20px;
+    margin-bottom: 30px;
+    width: 650px;
+}
+
+.buttons {
+    display: flex;
+}
+
+.button {
+    background-color: #fff;
+    border: none;
+    border-radius: 4px;
+    color: var(--black);
+
+    padding: 0.8rem;
+    padding-left: 2rem;
+    padding-right: 2.4rem;
+    margin-right: 15px;
+
+    font-size: 16px;
+    font-weight: 600;
+    
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    transition: .2s ease all;
+}
+
+.button:hover{
+    background-color: rgba(255,255,255,0.75);;
+}
+
+.button:nth-child(2) {
+    background-color: rgba(109,109,110,0.7);
+    color: var(--white);
+}
+
+.button:nth-child(2) > img {
+    width: 25px;
+    height: 25px;
+}
+
+.button:nth-child(2):hover {
+    background-color: rgba(109,109,110,0.4);
+}
+
+.button > img {
+    color: #fff;
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.movie-box:hover {
+    opacity: 0.7;
+}
+
+.carousel-movies {
+    padding-left: 60px;
+}
+
+
+.carousel-movies span {
+    font-size: 30px;    
+    font-weight: bold;
+}
